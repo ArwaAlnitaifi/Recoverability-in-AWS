@@ -1,0 +1,11 @@
+Minimum RTO for a single AZ outage:
+It will be automatically switched to the new instance in the second AZ therefore RTO will be around 1-2 mins.
+
+Minimum RTO for a single region outage:
+It will require a manual intervention to promote a cross-Region Read Replica therefore RTO will be around 30-40 mins.
+
+Minimum RPO for a single AZ outage:
+Data will be stored in another AZ and the instance will automatically take in place therefore RPO will be around 1-2 mins. 
+
+Minimum RPO for a single region outage:
+Since Read Replica is not an automated process we might lose some data during RDS outage therefore RPO which will be around 30-40 mins. 

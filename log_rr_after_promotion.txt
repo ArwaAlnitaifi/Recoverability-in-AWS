@@ -1,0 +1,37 @@
+[ec2-user@ip-10-2-11-96 ~]$ mysql -u admin -p -h secondarydatabase.c0dxuocmxm4w.us-west-1.rds.amazonaws.com
+Enter password:
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MySQL connection id is 13
+Server version: 8.0.20 Source distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MySQL [(none)]> use udacity
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+MySQL [udacity]> SHOW TABLES;
++-------------------+
+| Tables_in_udacity |
++-------------------+
+| test              |
+| udacity           |
++-------------------+
+2 rows in set (0.00 sec)
+
+MySQL [udacity]> INSERT INTO udacity VALUES ('AI');
+Query OK, 1 row affected (0.01 sec)
+
+MySQL [udacity]> SELECT * FROM udacity;
++------------+
+| course     |
++------------+
+| cloudarchi |
+| AI         |
++------------+
+2 rows in set (0.00 sec)
+
+MySQL [udacity]>
