@@ -8,4 +8,4 @@ Minimum RPO for a single AZ outage:
 Data will be stored in another AZ and the instance will automatically take in place therefore RPO will be around 1-2 mins. 
 
 Minimum RPO for a single region outage:
-Since Read Replica is not an automated process we might lose some data during RDS outage therefore RPO which will be around 30-40 mins. 
+Since Read Replica is not an automated process we might lose some data during RDS outage therefore RPO will be around 30-40 mins. 
